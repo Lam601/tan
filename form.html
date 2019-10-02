@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+<style>
+.red
+	{
+		border-color: red;
+	}
+</style>
+<script>
+function myFunction9()
+	{
+		var username = document.getElementById("name").value;
+		var gender = document.getElementById("gender").value;
+		var birth = document.getElementById("birth").value;
+		var address = document.getElementById("address").value;
+		var email = document.getElementById("email").value;
+		var phone = document.getElementById("tel").value;
+		var qualification = document.getElementById("qualification").value;
+		alert("Student information \n---------------- \nName: " + username + 
+			  											"\nGender: " + gender + 
+			  											"\nBirthday: " + birth +
+			 											"\nAddresss: " + address +
+			 											"\nEmail: " + email +
+			 											"\nPhone: " + phone +
+			 											"\nQualification: " + qualification);
+	}
+</script>
+</head>
+
+<body>
+<form onSubmit="myFunction9()" oninput="result.value=parseInt(rangel.value) + parseInt(number1.value)">
+	<table>
+	<tr>
+	<td>Full Name</td>
+	<td><input class="red" type="text" name="name"
+		   id="name" /></td>
+	</tr>
+	<tr>
+	<td>Gender</td>
+		<td><input type="radio" name="radio" id="gender"/>Male
+	   	<input type="radio" name="radio" id="gender"/>Female</td>
+	</tr>
+	<tr>
+	<td>Date of Birth</td>
+	<td><input type="date" id="birth"/></td>
+	</tr>
+	<tr>
+	<td>Address</td>
+	<td><input class="red" type="address" name="address" id="address"/></td>
+	</tr>
+	<tr>
+	<td>Email</td>
+	<td><input class="red" type="email" id="email" placeholder="abc@yahoo.com.vn"/></td>
+	</tr>
+	<tr>
+	<td>Phone Number</td>
+	<td><input class="red" type="tel" name="phone" id="tel" pattern="{10,11}" placeholder="form 10-11 numbers"/></td>
+	</tr>
+	<tr>
+	<td>Qualification</td>
+	<td><input type="text" list="mylist" id="qualification"/>
+	<datalist id="mylist">
+		<option>---Select---</option>
+		<option>Diploma</option>
+		<option>Bachelor Degree</option>
+		<option>Master</option>
+		</datalist></td>
+	</tr>
+	<tr>
+	<td>Comment</td>
+	<td><textarea></textarea></td>
+	</tr>
+	<tr>
+	<td><button class="boder" type="submit">Submit</button></td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>

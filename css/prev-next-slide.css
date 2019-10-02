@@ -1,0 +1,29 @@
+
+
+.owl-theme .owl-nav {
+    background: transparent;
+    color: #faa61a;
+}
+.owl-theme .owl-nav {
+    position: relative;
+    bottom: 310px;
+    font-size: 100px;
+}
+.owl-prev {
+    position: absolute;
+    left: -50px;
+    /*color:red;*/
+}
+.owl-next {
+    position: absolute;
+    right: -50px;
+}
+
+/*CSS for dots*/
+.owl-theme .owl-dots .owl-dot.active span {
+    width: 25px;
+    transition: all 0.5s;
+}
+.owl-theme .owl-dots {
+    margin-top: -25px;
+}
